@@ -3,7 +3,7 @@ st.set_page_config(page_title="mango",
                    page_icon="4463971.png",
                    layout="wide")
 st.title("welcome")
-tab1,tab2=st.tabs(["Main","Second"])
+tab1,tab2,tab3=st.tabs("Main","Second","links")
 with tab1:
     st.header("Main")
     st.write("This is the main tab.")
@@ -20,4 +20,25 @@ with tab1:
             st.warning("However, some people may be allergic to mangoes, so it's important to be cautious if you have a known allergy.")
             st.markdown("For more information about mangoes, you can visit the [Mango Board](https://www.mango.org/) website.")
             st.markdown("You can also check out the [Mango Recipes](https://www.allrecipes.com/recipes/16792/fruits-and-vegetables/fruits/mango/) page for delicious ways to enjoy mangoes.")
+with tab2:
+    st.header("tut nechego net")
+with tab3:
+    st.title("Корисні посилання")
+    st.write("Ось список корисних сайтів для навчання та програмування:")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.subheader(" Програмування")
+
+        st.markdown("[Python](https://www.python.org/)")
+        st.markdown("[W3Schools](https://www.w3schools.com/python/)")
+        st.markdown("[Streamlit](https://streamlit.io/)")
+
+    with col2:
+        st.subheader("Інші ресурси")
+
+        st.markdown("[GitHub](https://github.com/)")
+        st.markdown("[freeCodeCamp](https://www.freecodecamp.org/)")
+        st.markdown("[GeeksforGeeks](https://www.geeksforgeeks.org/)")
             
